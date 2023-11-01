@@ -1,0 +1,227 @@
+/* Media query for screens with a minimum width of 901px (adjust for larger screens) */
+@media (min-width: 64rem) {
+    /* Add your larger screen styles here */
+    .product-card {
+        display: inline-block;
+        height: 500px;
+        width: 300px;
+        margin: 30px;
+        background-size: cover;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s; /* Add a transition effect for the transform */
+    }
+    
+    .product-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0); /* Initial transparent background */
+        transition: background 0.3s; /* Add a transition effect for the background */
+    }
+    
+    .product-card:hover::before {
+        background: rgba(0, 0, 0, 0.7); /* Change to black background on hover */
+    }
+    
+    .product-card:hover {
+        transform: scale(1.1); /* Enlarge the card on hover */
+    }
+    
+    .product-details {
+        padding: 10px;
+        transform: translate(1); /* Center the product details */
+        position: absolute;
+        transition: transform 0.3s; /* Add a transition effect for the transform */
+    }
+    
+      
+      .product-details {
+        padding: 10px;
+      }
+      
+      
+      .product-name {
+        font-size: 18px;
+      }
+      
+      .product-price {
+        font-size: 16px;
+      }
+      
+      .join-section {
+        background: linear-gradient(45deg, black, transparent);;
+        color: white;
+      }
+      
+      .join-card {
+        padding: 10px;
+      }
+      
+      .join-name {
+        font-size: 18px;
+      }
+      
+      .join-phone {
+        font-size: 16px;
+      }
+      section.product-section {
+        display: flex;
+        flex-direction: row;
+    }
+        body{
+        background-color: #fbe3e8;
+    }
+      /* Header styles */
+      .site-header {
+        background: linear-gradient(45deg, black, transparent);;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .site-title {
+        font-size: 24px;
+      }
+      
+      .nav-links a {
+        color: darkblue;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 18px;
+      }
+      
+      /* Footer styles */
+      .site-footer {
+        background: linear-gradient(45deg, black, transparent);;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      .footer-content {
+        font-size: 16px;
+      }
+}
+
+@media (max-width:64rem) {
+    body {
+        background-color: #fbe3e8;
+    }
+    
+    /* Header styles for mobile */
+    .site-header {
+        background: linear-gradient(45deg, black, transparent);
+        color: white;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .site-title {
+        font-size: 24px;
+        margin: 10px;
+    }
+    
+    .nav-links {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .nav-links a {
+        color: darkblue;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 18px;
+    }
+    
+    /* Product card styles for mobile */
+    .product-card {
+        margin: 5%;
+        display: inline-block;
+        height: 1000px;
+        width: 70%; /* Make product cards full width for mobile */
+        background-size: cover;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+    
+    .product-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0); /* Initial transparent background */
+        transition: background 0.3s;
+    }
+    
+    .product-card:hover::before {
+        background: rgba(0, 0, 0, 0.7); /* Change to black background on hover */
+    }
+    
+    .product-card:hover {
+        transform: none; /* Remove the enlargement on mobile */
+    }
+    
+    .product-details {
+        padding: 10px;
+        position: absolute;
+        
+        transform: translate(1); /* Center the product details */
+        transition: transform 0.3s;
+    }
+    
+    .product-name {
+        font-size: 18px;
+    }
+    
+    .product-price {
+        font-size: 16px;
+    }
+    
+    /* Join section styles for mobile */
+    .join-section {
+        background: linear-gradient(45deg, black, transparent);
+        color: white;
+        padding: 10px;
+    }
+    
+    .join-card {
+        padding: 10px;
+    }
+    
+    .join-name {
+        font-size: 18px;
+    }
+    
+    .join-phone {
+        font-size: 16px;
+    }
+    
+    /* Footer styles for mobile */
+    .site-footer {
+        background: linear-gradient(45deg, black, transparent);
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .footer-content {
+        font-size: 16px;
+    }
+    
+}
+
